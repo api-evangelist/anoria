@@ -1,7 +1,29 @@
 aid: anoria
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anoria.png
 name: Anoria
-description: Anoria is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Anoria is a Y Combinator (Spring 2026) human-interaction company building a
+  wearable bracelet for the EQ era that measures and tracks emotional states in
+  real time. The device uses the company's proprietary SOMI (state-of-mind
+  inference) model to correlate roughly 150 audio and biometric signals into a
+  "Flow Score" that reflects a user's energy, mood, and focus, then explains why
+  the user feels that way and what they can do about it. Anoria targets founders
+  and creatives who treat their mental state as a performance asset, with the
+  goal of making emotional intelligence trainable. As of mid-2026 the company is
+  an early-stage prototype running an early-access waitlist; it publishes no
+  public developer API, SDK, or documentation yet, so this API Evangelist profile
+  captures verified company identity only.
 url: https://raw.githubusercontent.com/api-evangelist/anoria/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +36,29 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Wearables
+- Emotional Intelligence
+- Biometrics
+- Health
+- Hardware
+- Consumer
+- Artificial Intelligence
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/anoria-domain-security.yml
+- type: Website
+  url: https://www.anoria.com
+- type: SignUp
+  url: https://www.anoria.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
